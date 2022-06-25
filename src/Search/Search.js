@@ -9,7 +9,7 @@ const Search = () => {
   const fetchApi = async e => {
     e.preventDefault();
     let result = await fetch(
-      `https://api.unsplash.com/search/photos?query=${query}&client_id=Ih77VWS-ZBvS4Vq_kH0cdzD3HApIPNvl8_4MwqFCq44&count=30`
+      `https://api.unsplash.com/search/photos?query=${query}&client_id=yourapi&count=30`
     );
     result = await result.json();
     setSearch(result.results);

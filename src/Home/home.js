@@ -11,7 +11,7 @@ const Home = () => {
 
   const fetchApi = async () => {
     let result = await fetch(
-      `https://api.unsplash.com/photos/random?client_id=Ih77VWS-ZBvS4Vq_kH0cdzD3HApIPNvl8_4MwqFCq44&count=30`
+      `https://api.unsplash.com/photos/random?client_id=yourapis&count=30`
     );
     result = await result.json();
     setPhoto([...photo, ...result]);
@@ -46,6 +46,3 @@ const Home = () => {
 };
 
 export default Home;
-
-// access key  = Ih77VWS-ZBvS4Vq_kH0cdzD3HApIPNvl8_4MwqFCq44
-// api = https://api.unsplash.com/photos/?client_id=Ih77VWS-ZBvS4Vq_kH0cdzD3HApIPNvl8_4MwqFCq44
